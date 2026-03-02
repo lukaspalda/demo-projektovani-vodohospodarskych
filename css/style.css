@@ -327,6 +327,7 @@ a:hover { color: var(--primary-hover); }
     gap: 24px;
     flex-wrap: wrap;
 }
+.cookie-banner[hidden] { display: none; }
 .cookie-banner p { font-size: 0.9rem; color: var(--text-dark-muted); margin: 0; }
 .cookie-actions { display: flex; gap: 8px; flex-shrink: 0; }
 
