@@ -63,6 +63,47 @@
         animElements.forEach(function(el) { observer.observe(el); });
     }
 
+    // ── Animated Counter ──
+    var counters = document.querySelectorAll('[data-count]');
+    if (counters.length > 0 && 'IntersectionObserver' in window) {
+        var counterObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    var el = entry.target;
+                    var target = parseInt(el.getAttribute('data-count'), 10);
+                    var duration = 1500;
+                    var start = 0;
+                    var startTime = null;
+                    function animate(time) {
+                        if (!startTime) startTime = time;
+                        var progress = Math.min((time - startTime) / duration, 1);
+                        var eased = 1 - Math.pow(1 - progress, 3);
+                        el.textContent = Math.floor(eased * target);
+                        if (progress < 1) {
+                            requestAnimationFrame(animate);
+                        } else {
+                            el.textContent = target;
+                        }
+                    }
+                    requestAnimationFrame(animate);
+                    counterObserver.unobserve(el);
+                }
+            });
+        }, { threshold: 0.5 });
+        counters.forEach(function(el) { counterObserver.observe(el); });
+    }
+
+    // ── Scroll to Top ──
+    var scrollTopBtn = document.getElementById('scroll-top');
+    if (scrollTopBtn) {
+        window.addEventListener('scroll', function() {
+            scrollTopBtn.classList.toggle('visible', window.scrollY > 600);
+        }, { passive: true });
+        scrollTopBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
     // ── FAQ Accordion (only one open at a time) ──
     document.querySelectorAll('.faq-item').forEach(function(item) {
         item.addEventListener('toggle', function() {
