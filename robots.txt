@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://https://wz-demo-projektovani-vodohospodarskych.netlify.app/sitemap.xml
