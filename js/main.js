@@ -1,19 +1,6 @@
 (function() {
     'use strict';
 
-    // ── Theme Toggle ──
-    var themeToggle = document.getElementById('theme-toggle');
-    function setTheme(theme) {
-        document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
-    }
-    if (themeToggle) {
-        themeToggle.addEventListener('click', function() {
-            var current = document.documentElement.getAttribute('data-theme');
-            setTheme(current === 'dark' ? 'light' : 'dark');
-        });
-    }
-
     // ── Mobile Menu ──
     var navToggle = document.getElementById('nav-toggle');
     var navMenu = document.getElementById('nav-menu');
