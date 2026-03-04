@@ -453,10 +453,10 @@ a:hover { color: var(--primary-hover); }
 .faq-answer { padding: 0 24px 20px; color: var(--text-dark-muted); }
 
 /* ═══ CONTACT ═══ */
-.contact-map { margin-bottom: 48px; }
+.contact-map { margin-bottom: 24px; }
 .contact-map iframe { display: block; width: 100%; }
-.contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 48px; }
-.contact-info { display: flex; flex-direction: column; gap: 24px; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+.contact-info { display: flex; flex-direction: column; gap: 20px; }
 .contact-item { display: flex; align-items: flex-start; gap: 16px; }
 .contact-item svg { color: var(--primary); flex-shrink: 0; margin-top: 4px; }
 .contact-item strong { display: block; margin-bottom: 2px; }
