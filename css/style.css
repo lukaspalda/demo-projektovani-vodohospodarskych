@@ -66,6 +66,9 @@
     --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.25);
 }
 
+/* ── Utilities ── */
+.mobile-br { display: none; }
+
 /* ── Reset ── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
@@ -606,6 +609,7 @@ a:focus-visible {
     .nav-link { font-size: 1.1rem; }
     .nav-toggle { display: flex; }
 
+    .mobile-br { display: inline; }
     .hero { min-height: 100vh; min-height: 100svh; padding: 100px 0 80px; display: flex; flex-direction: column; justify-content: center; }
     .hero-title { font-size: 2rem; }
     .hero-cta { flex-direction: column; }
