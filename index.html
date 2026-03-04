@@ -25,15 +25,11 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
     <link rel="icon" href="img/favicon-192.png" sizes="192x192" type="image/png">
-    <meta name="theme-color" content="#6366f1">
+    <meta name="theme-color" content="#0E7490">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=2">
 
-    <!-- Theme flash prevention -->
-    <script>
-        (function(){var t=localStorage.getItem('theme');if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.setAttribute('data-theme','dark')})();
-    </script>
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -77,10 +73,6 @@
                 <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
             </ul>
             <div class="nav-actions">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Přepnout tmavý/světlý režim">
-                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg>
-                </button>
                 <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
                     <span></span><span></span><span></span>
                 </button>
@@ -115,6 +107,9 @@
                 </div>
             </div>
         </div>
+        <a href="#o-nas" class="hero-scroll" aria-label="Scrollovat dolů">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </a>
     </section>
 
     <!-- ═══ O NÁS ═══ -->
@@ -143,6 +138,41 @@
                 </div>
                 <div class="about-image">
                     <img src="img/photo-4.jpg" alt="Vodohospodářský projekt — ukázka realizace" loading="lazy" width="600" height="400">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ JAK PROBÍHÁ PROJEKT ═══ -->
+    <section class="section" id="proces">
+        <div class="container">
+            <h2 class="section-title">Jak probíhá projekt</h2>
+            <p class="section-subtitle">Od prvního setkání po kolaudaci — provedeme vás celým procesem</p>
+            <div class="process-timeline">
+                <div class="process-step" data-animate>
+                    <div class="process-number">1</div>
+                    <h3>Konzultace</h3>
+                    <p>Probereme váš záměr a&nbsp;zhodnotíme lokalitu. Rybník, ČOV, vodovod — každý projekt začíná pochopením území a&nbsp;vašich potřeb.</p>
+                </div>
+                <div class="process-step" data-animate>
+                    <div class="process-number">2</div>
+                    <h3>Průzkumy a&nbsp;studie</h3>
+                    <p>Hydrogeologický průzkum, geodetické zaměření, studie proveditelnosti. Kvalitní podklady jsou základ kvalitního návrhu.</p>
+                </div>
+                <div class="process-step" data-animate>
+                    <div class="process-number">3</div>
+                    <h3>Projektová dokumentace</h3>
+                    <p>Zpracujeme kompletní dokumentaci dle vodního zákona — od&nbsp;studie přes DSP až po realizační projekt.</p>
+                </div>
+                <div class="process-step" data-animate>
+                    <div class="process-number">4</div>
+                    <h3>Povolení a&nbsp;dotace</h3>
+                    <p>Vyřídíme vodoprávní řízení, stavební povolení i&nbsp;žádost o&nbsp;dotaci z&nbsp;OPŽP. Kompletní inženýring bez starostí.</p>
+                </div>
+                <div class="process-step" data-animate>
+                    <div class="process-number">5</div>
+                    <h3>Dozor a&nbsp;kolaudace</h3>
+                    <p>Autorský i&nbsp;technický dozor na stavbě. Hlídáme kvalitu realizace až po úspěšné předání díla.</p>
                 </div>
             </div>
         </div>
