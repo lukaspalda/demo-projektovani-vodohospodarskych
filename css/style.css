@@ -493,7 +493,8 @@ a:hover { color: var(--primary-hover); }
 .footer-links { display: flex; gap: 24px; }
 .footer-links a { color: var(--text-dark-muted); font-size: 0.95rem; }
 .footer-links a:hover { color: var(--primary); }
-.footer-bottom { border-top: 1px solid rgba(14, 116, 144, 0.15); padding-top: 24px; display: flex; justify-content: space-between; font-size: 0.875rem; }
+.footer-billing { border-top: 1px solid rgba(14, 116, 144, 0.15); padding-top: 20px; margin-bottom: 16px; font-size: 0.8rem; color: var(--text-dark-muted); text-align: center; opacity: 0.7; }
+.footer-bottom { border-top: 1px solid rgba(14, 116, 144, 0.08); padding-top: 20px; display: flex; justify-content: space-between; font-size: 0.875rem; }
 .footer-credit a { color: var(--primary); }
 
 /* ═══ SCROLL TO TOP ═══ */
